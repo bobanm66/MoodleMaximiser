@@ -2,7 +2,7 @@
   "manifest_version": 2,
   
   "name": "Moodle Direct PDF Viewer",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Opens PDFs on Moodle full screen, rather than the default tiny viewer",
   "content_scripts": [
     {

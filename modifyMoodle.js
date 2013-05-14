@@ -26,8 +26,7 @@ function getRows() {
 }
 
 function fixLi(li) {
-    var div = li.children[0];
-    var a = div.children[0];
+    var a = li.getElementsByTagName('a')[0];
     var originalhref = a.href;
     a.href = "javascript:;";
 
@@ -47,8 +46,13 @@ function loadLink(orignalURL) {
 }
 
 var lis = document.getElementsByClassName("activity resource modtype_resource");
+var lis2 = document.getElementsByClassName("item_with_icon");
 for (var i=0; i<lis.length; i++) {
     if (isPDF(lis[i])) { fixLi(lis[i]); };
 }
+for (var i=0; i<lis2.length; i++) {
+    if (isPDF(lis2[i])) { fixLi(lis2[i]); };
+}
+
 
 
