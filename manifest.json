@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  
+  "name": "Moodle Direct PDF Viewer",
+  "version": "1.0",
+  "description": "Opens PDFs on Moodle full screen, rather than the default tiny viewer",
+  "content_scripts": [
+    {
+      "matches": ["*://moodle.nottingham.ac.uk/course/view.php?id=*",
+                    "*://moodle.nottingham.ac.uk/mod/resource/view.php?id=*"],
+      "js": ["modifyMoodle.js"]
+    }
+  ]
+}
